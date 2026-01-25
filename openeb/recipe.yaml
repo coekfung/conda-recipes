@@ -1,16 +1,17 @@
 context:
   name: openeb
-  version: 5.1.1
+  version: 5.2.0
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 source:
-  url: https://github.com/prophesee-ai/openeb/releases/download/${{ version }}/Full.Source.Code.v${{ version }}.tar.gz
-  sha256: 50561f027769331041c1d7b3a1ec720f7574ff203c32d5d94ecd512de99035fd
+  url: https://github.com/prophesee-ai/openeb/releases/download/${{ version }}/Full.Source.Code.v${{
+    version }}.tar.gz
+  sha256: 4c875d1a51096980cbcded43137ace9c633cf39affb70021038cb1893adcebd2
   patches:
     - 0001-conda-root-installation-path.patch
 build:
-  number: 5
+  number: 0
   skip:
     - not (linux and x86_64)
   script:
