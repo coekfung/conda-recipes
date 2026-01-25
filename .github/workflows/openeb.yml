@@ -1,4 +1,7 @@
 name: Update openeb version
+permissions:
+  contents: write
+  pull-requests: write
 on:
   schedule:
     - cron: '0 2 * * 6'
