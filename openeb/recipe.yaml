@@ -10,7 +10,7 @@ source:
   patches:
     - 0001-conda-root-installation-path.patch
 build:
-  number: 0
+  number: 1
   skip:
     - not (linux and x86_64)
   script:
