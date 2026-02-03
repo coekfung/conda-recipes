@@ -10,7 +10,7 @@ source:
   patches:
     - 0001-conda-root-installation-path.patch
 build:
-  number: 1
+  number: 2
   skip:
     - not (linux and x86_64)
   script:
@@ -44,7 +44,7 @@ requirements:
     - elfutils
   run:
     - h5py
-    - numpy <2.4
+    - numpy >2
 tests:
   - python:
       imports:
