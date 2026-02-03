@@ -46,7 +46,7 @@ jobs:
           pixi run yq -Y -i '.source.sha256 = "${{ steps.get_sha.outputs.sha256 }}"' openeb/recipe.yaml
           pixi run yq -Y -i '.build.number = 0' openeb/recipe.yaml
       - name: Run yamlfmt
-        uses: yk-lab/yamlfmt-action@v1
+        uses: yk-lab/yamlfmt-action@v1.0.0
         with:
           path: openeb/recipe.yaml
       - name: Create Pull Request
